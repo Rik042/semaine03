@@ -15,3 +15,165 @@
     "wdth" <width>;
 }
 */
+/*----------------------------------------------------------------
+GENERIC
+----------------------------------------------------------------*/
+html{
+    box-sizing: border-box;
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+/*----------------------------------------------------------------
+ELEMENTS
+----------------------------------------------------------------*/
+/*Base*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+    
+}
+
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+
+/*Éléments texte*/
+h1,h2,h3{
+    font-family: "Dosis", serif ;
+}
+
+p{
+    font-weight: 400;
+}
+
+/*----------------------------------------------------------------
+COMPONENTS
+----------------------------------------------------------------*/
+/*Header*/
+header .wrapper{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    gap: 20px;
+}
+
+h1{
+    font-size: 44px;
+}
+
+header ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+header a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    
+}
+
+header a:hover{
+    color:white ;
+    background-color:#0E5EA1 ;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/*Hero*/
+.hero {
+    background-image: url("../images/SECTION_HERO.jpg");
+    background-repeat: no-repeat;
+    background-size:cover ;
+    height: 450px;
+}
+
+.hero .wrapper{
+    display: flex;
+    justify-content: center;
+    height: 450px;
+    align-items: center;
+    
+}
+.boite{
+    background: rgba(0, 0, 0, 70%);
+    padding: 20px;
+    height: 120px;
+    border-radius: 10px;
+    
+}
+
+.hero h2{
+    color: white;
+    font-size: 36px;
+    margin: 0;
+}
+
+.hero p{
+    color: #2FCB48;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/*Contenu*/
+.contenu{
+    padding: 40px 0;
+    background-color: #E3E4E4 ;
+}
+.contenu .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.item4{
+    grid-column: 1/-1;
+}
+
+article{
+    background-color: white;  
+    padding: 10px;
+    border-bottom: #0E5EA1 5px solid;
+    justify-items: center;
+}
+
+.contenu h3{
+    font-size: 24px;
+}
+
+.contenu p{
+    font-size: 16px;
+    line-height: 160%;
+    justify-self: center;
+}
+
+.contenu a{
+    text-decoration: none;
+    padding: 8px 45px;
+    background-color:#B7B7B7 ;
+    color: black;
+    border-radius: 5px;
+    
+}
+
+.contenu a:hover{
+    background-color: #0E5EA1;
+    border-radius: 5px;
+    color:white
+}
+
+.contenu .bouton{
+    text-align: bottom  ;
+    
+}
