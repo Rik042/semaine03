@@ -144,8 +144,10 @@ header a:hover{
 article{
     background-color: white;  
     padding: 10px;
+    padding-bottom: 20px;
     border-bottom: #0E5EA1 5px solid;
     justify-items: center;
+    display: grid;
 }
 
 .contenu h3{
@@ -174,6 +176,19 @@ article{
 }
 
 .contenu .bouton{
-    text-align: bottom  ;
-    
+    display: flex;
+    align-items: end;
+    text-align: end;
+}
+
+/*Footer*/
+footer{
+    background-color: black;
+    padding: 24px 0;
+}
+
+footer p{
+    color: white;
+    margin: 0;
+    text-align: center;
 }
